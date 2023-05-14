@@ -1,12 +1,10 @@
+
 import express, { Request, Response } from 'express';
+import { router } from '../routes';
 
-interface user {
-    // eslint-disable-next-line linebreak-style
 
-}
 const server = express();
-server.get('/', (_: Request, res: Response) => {
-    res.send({ api: 'API V 1.0.0' });
-});
+server.use(express.json());
+server.use(router);
 
 export { server };
