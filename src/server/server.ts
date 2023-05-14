@@ -1,4 +1,5 @@
 
+import 'dotenv/config';
 import express, { Request, Response } from 'express';
 import { router } from '../routes';
 
@@ -8,3 +9,4 @@ server.use(express.json());
 server.use(router);
 
 export { server };
+
