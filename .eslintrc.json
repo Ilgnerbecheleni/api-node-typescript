@@ -32,6 +32,7 @@
             "always"
         ],
         "@typescript-eslint/no-empty-interface":"off",
-       " eslint linebreak-style": ["error", "unix"]
+       " eslint linebreak-style": ["error", "unix"],
+       "@typescript-eslint/ban-types":"off"
     }
 }
